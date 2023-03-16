@@ -1,3 +1,5 @@
+<div align="center">
+
 # research portfolio
 this is for my research class it's pretty cool
 
@@ -8,3 +10,4 @@ to install run `npm i`
 to build run `npm run build`
 
 to run a dev server run `npm run dev -- --open`
+</div>
