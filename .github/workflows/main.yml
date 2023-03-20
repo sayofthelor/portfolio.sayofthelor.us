@@ -15,5 +15,7 @@ jobs:
         run: npm i
       - name: Build Page
         run: npm run build
+      - name: Configure Git
+        run: git config --global user.email "justsailor06@gmail.com"
       - name: Deploy Page
         run: npm run deploy
