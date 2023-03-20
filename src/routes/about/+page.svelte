@@ -1,4 +1,4 @@
-<link rel='stylesheet' href='src/lib/atom-dark.css'>
+<link rel='stylesheet' href='https://unpkg.com/prism-themes@1.6.0/themes/prism-atom-dark.css'>
 <script lang="ts">
     import Prism from 'svelte-prism';
     const source:string = `class Me {

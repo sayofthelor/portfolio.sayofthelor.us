@@ -35,11 +35,12 @@
 </style>
 
 <script lang="ts">
+    import { base } from '$app/paths';
     const navItems:Array<Array<string>> = [
-        ["home", "/"],
-        ["overview", "/overview"],
-        ["process", "/process"],
-        ["about", "/about"]
+        ["home", base + "/"],
+        ["overview", base + "/overview"],
+        ["process", base + "/process"],
+        ["about", base + "/about"]
     ];
 </script>
 
