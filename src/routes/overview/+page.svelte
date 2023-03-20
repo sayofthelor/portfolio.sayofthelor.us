@@ -25,6 +25,15 @@
         float: center;
         display: inline;
     }
+    #specImg {
+        margin: 1vw;
+        transition: all 0.2s;
+        border: #eee 2px solid;
+        border-radius: 10px;
+    }
+    #specImg:hover {
+        transform: scale(1.05);
+    }
 </style>
 <script lang="ts">
     import CaptionImage from "../../components/CaptionImage.svelte";
@@ -33,12 +42,17 @@
     import openflImg from "$lib/openfl.png";
     import flixelImg from "$lib/flixel.svg";
     import hqLogo from "$lib/hq.png";
+    import screenshot1 from "$lib/screenshot1.png";
+    import screenshot2 from "$lib/screenshot2.png";
+    import screenshot3 from "$lib/screenshot3.png";
+    import screenshot4 from "$lib/screenshot4.png";
     const info:Array<Array<string>> = [
         ["Haxe", haxeImg, "http://haxe.org"],
         ["Lime", limeImg, "http://lime.openfl.org"],
         ["OpenFL", openflImg, "http://openfl.org"],
         ["HaxeFlixel", flixelImg, "http://haxeflixel.com"]
     ];
+    const screenshots:Array<string> = [screenshot1, screenshot2, screenshot3, screenshot4];
 </script>
 
 <h1>Research Overview Video</h1>
@@ -65,3 +79,10 @@
     <li><CaptionImage src={i[1]} text={i[0]} alt={i[0] + " logo"} url={i[2]} width="150px" height="150px"/></li>
     {/each}
 </ul>
+<h1>Screenshots</h1>
+<div style="text-align: center">
+    {#each screenshots as sc, index}
+    <img id="specImg" src={sc} alt="Screenshot" width="30%" />
+    {#if index % 2 == 1} <br /> {/if}
+    {/each}
+</div>
