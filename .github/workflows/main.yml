@@ -2,6 +2,10 @@ name: Build GitHub Pages
 
 on:
   workflow_dispatch:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
 
 jobs:
   build:
@@ -15,7 +19,8 @@ jobs:
         run: npm i
       - name: Build Page
         run: npm run build
-      - name: Configure Git
-        run: git config user.name "sayofthelor"
-      - name: Deploy Page
-        run: npm run deploy
+      - name: Deploy to Pages
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: page-build # The branch the action should deploy to.
+          folder: 'build' # The folder the action should deploy.
