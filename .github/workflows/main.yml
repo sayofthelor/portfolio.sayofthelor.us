@@ -7,6 +7,9 @@ on:
   pull_request:
     branches: [ master ]
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,7 +23,7 @@ jobs:
       - name: Build Page
         run: npm run build
       - name: Deploy to Pages
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: page-build # The branch the action should deploy to.
           folder: 'build' # The folder the action should deploy.
