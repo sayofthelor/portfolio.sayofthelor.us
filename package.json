@@ -11,7 +11,7 @@
 		"deploy": "type nul > build/.nojekyll && gh-pages -d build -t true"
 	},
 	"devDependencies": {
-		"@sveltejs/adapter-netlify": "^2.0.6",
+		"@sveltejs/adapter-vercel": "^2.4.0",
 		"@sveltejs/kit": "^1.5.0",
 		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
