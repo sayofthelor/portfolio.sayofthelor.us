@@ -49,3 +49,11 @@
 <div class="codeBlock">
     <Prism language="js" {source}/>
 </div>
+<h1>
+    Some more info about the website, for those interested
+</h1>
+<p>
+    This website is built with <a href='https://kit.svelte.dev'>SvelteKit</a>, my preferred web framework. It has a lot of useful features that make web development fast, and I would recommend giving it a look.<br />
+    The shader is the background of the homepage is <a href="https://www.shadertoy.com/view/Wt33Wf">Cyber Fuji 2020</a>, and I'm displaying it with a custom Flixel project I made, using my custom fork of a Flixel library called <a href="https://github.com/sayofthelor/flixel-shadertoy-shader-lr">flixel-shadertoy-shader-lr</a>. If you want to see the project by itself, you can find it <a href="https://sayofthelor.github.io/r_p_shader">here</a>.<br />
+    It's hosted on <a href="https://vercel.com">Vercel</a>, and you can find the source code for the website <a href="https://github.com/sayofthelor/research-portfolio">here</a>.
+</p>
