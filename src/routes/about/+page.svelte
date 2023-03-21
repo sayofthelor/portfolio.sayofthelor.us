@@ -22,11 +22,14 @@
         "C#",
         "Haxe"
     ];
-    function doWork() {
+    async function doWork() {
         for (let i = 0; i < 1000; i++) {
-            procrastinate();
+            await procrastinate();
         }
         actuallyDoWork();
+    }
+    function procrastinate() {
+        return new Promise(r => setTimeout(r, 1000));    
     }
     function ActuallyDoWork() {
         doWork();
