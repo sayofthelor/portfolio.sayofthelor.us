@@ -4,7 +4,7 @@
     }
 </style>
 
-<h1>Steps to Product</h1>
+<h1>The Process</h1>
 
 <p>
     <strong>1.</strong> I created a new GitHub repository. <a href="http://github.com/haxequest/haxequest">(here)</a> <br />

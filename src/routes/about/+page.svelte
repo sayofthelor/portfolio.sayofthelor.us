@@ -1,20 +1,28 @@
 <link rel='stylesheet' href='https://unpkg.com/prism-themes@1.6.0/themes/prism-atom-dark.css'>
 <script lang="ts">
     import Prism from 'svelte-prism';
-    const source:string = `class Me {
-    let name = "Sailor Priddy";
-    let age = 16;
-    let gender = {
-        pronouns: "she/they",
-        gender: "transed 😎"
+    const source:string = `import Human from "../human.ts";
+class Me extends Human {
+    /*
+        could probably implement this better
+        buuuut we've got about 5 years before production anyways
+    */
+    constructor() {
+        super();
+        name = "Sailor Priddy";
+        age = 16;
+        gender = {
+            pronouns: "she/they",
+            gender: "transed 😎"
+        };
+        interests = [
+            "Information Technology",
+            "Rhythm Games",
+            "Drawing and Animation",
+            "Music Production"
+        ];
     }
-    let interests = [
-        "Information Technology",
-        "Rhythm Games",
-        "Drawing and Animation",
-        "Music Production"
-    ];
-    let knownProgramLangs = [
+    let knownProgramLangs:Array<string> = [
         "JavaScript",
         "TypeScript",
         "Python",
@@ -26,19 +34,19 @@
         for (let i = 0; i < 1000; i++) {
             await procrastinate();
         }
-        actuallyDoWork();
+        await actuallyDoWork();
     }
-    function procrastinate() {
+    async function procrastinate() {
         return new Promise(r => setTimeout(r, 1000));    
     }
-    function ActuallyDoWork() {
-        doWork();
+    async function ActuallyDoWork() {
+        await doWork();
     }
 }`;
 </script>
 <style>
     .codeBlock {
-        width: 50%;
+        width: calc(100vw - 10rem);
         text-align: center;
         margin: auto;
     }

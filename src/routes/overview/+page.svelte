@@ -26,10 +26,11 @@
         display: inline;
     }
     #specImg {
-        margin: 1vw;
+        margin: 0.5rem;
         transition: all 0.2s;
         border: #eee 2px solid;
         border-radius: 10px;
+        width: 30vw;
     }
     #specImg:hover {
         transform: scale(1.05);
@@ -82,7 +83,7 @@
 <h1>Screenshots</h1>
 <div style="text-align: center">
     {#each screenshots as sc, index}
-    <img id="specImg" src={sc} alt="Screenshot" width="30%" />
+    <img id="specImg" src={sc} alt="Screenshot" />
     {#if index % 2 == 1} <br /> {/if}
     {/each}
 </div>
