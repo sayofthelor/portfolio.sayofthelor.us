@@ -56,10 +56,12 @@
     const screenshots:Array<string> = [screenshot1, screenshot2, screenshot3, screenshot4];
 </script>
 
-<h1>Research Overview Video</h1>
+<div style="display: none;">
+    <h1>Research Overview Video</h1>
 
-<div class="video">
-    <iframe id="vidChild" allowFullscreen={true} src="https://www.youtube.com/embed/nleB7uPtQxQ?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" title="YouTube video" frameborder="0"></iframe>
+    <div class="video">
+        <iframe id="vidChild" allowFullscreen={true} src="https://www.youtube.com/embed/nleB7uPtQxQ?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" title="YouTube video" frameborder="0"></iframe>
+    </div>
 </div>
 
 <h1>Driving Question:</h1>
