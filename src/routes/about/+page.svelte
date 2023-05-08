@@ -42,7 +42,8 @@ class Me extends Human {
     async function ActuallyDoWork() {
         await doWork();
     }
-}`;
+}
+export default Me;`;
 </script>
 <style>
     .codeBlock {
