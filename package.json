@@ -25,7 +25,7 @@
 		"gh-pages": "^5.0.0",
 		"prism-svelte": "^0.5.0",
 		"prismjs": "^1.29.0",
-		"svelte-fa": "^3.0.3",
+		"svelte-fa": "^3.0.4",
 		"svelte-prism": "^1.1.6"
 	}
 }
